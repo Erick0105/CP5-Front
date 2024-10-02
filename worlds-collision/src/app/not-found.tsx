@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function NotFound() {
     return (
-      <div>
+      <div className="not-found">
         <h1>404 - NotFound</h1>
         <h2>This page could not be found.</h2>
 

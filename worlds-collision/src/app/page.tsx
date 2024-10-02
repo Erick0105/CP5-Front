@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="conteudo">
       <h1>As obras de --Velikovsky--</h1>
       <h2>Essas obras de Valkovsky ajudaram a avançar a compreensão das interações cósmicas e suas consequências para a formação e evolução dos planetas, influenciando estudos posteriores na astrofísica e na cosmologia.</h2>
       <ol>
