@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Worlds in Collision",
@@ -13,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
