@@ -1,4 +1,4 @@
 export type TipoImagens = {
-    image:string;
-    date:string;
+    hdurl:string;
+    title:string;
 }
