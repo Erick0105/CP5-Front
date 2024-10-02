@@ -4,17 +4,25 @@
 
 @layer components{
     .header{
-        @apply bg-white grid justify-center text-center;
+        @apply bg-white grid justify-center text-center gap-5 p-6;
+
+        & h2{
+            @apply text-2xl;
+        }
     }
 
     .menu{
         
         & ul{
-            @apply flex gap-3;
+            @apply flex gap-4;
+
+            & a{
+                @apply hover:text-2xl delay-100;
+            }
         }
     }
 
     .footer{
-        @apply text-lg flex flex-row items-center justify-center;
+        @apply text-lg flex flex-row items-center justify-center font-bold;
     }
 }
