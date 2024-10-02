@@ -5,7 +5,7 @@ export async function GET() {
     
     try {
         //A Api certa é essa "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
-        const response = await fetch('https://api.nasa.gov/EPIC/api/enhanced/date/2015-10-31?api_key=d0YjRyicfDKlGDixyh8BnNMM0r5isSoyx5zBdXN8');
+        const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=d0YjRyicfDKlGDixyh8BnNMM0r5isSoyx5zBdXN8&count=10');
     
         if (!response.ok) {
             throw new Error(`Erro ao buscar dados: ${response.statusText}`);
