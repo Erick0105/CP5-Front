@@ -5,20 +5,19 @@ export async function GET() {
     
     try {
         //A Api certa é essa "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
-        const response = await fetch('https://api.nasa.gov/EPIC/api/enhanced/date/2015-10-31?api_key=d0YjRyicfDKlGDixyh8BnNMM0r5isSoyx5zBdXN8');
+        const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=d0YjRyicfDKlGDixyh8BnNMM0r5isSoyx5zBdXN8&count=8');
     
         if (!response.ok) {
             throw new Error(`Erro ao buscar dados: ${response.statusText}`);
         }
 
         const dados:TipoImagens[] = await response.json();
-        
+
         const images = dados.map(image => {
     
-            const datas = image.date.split("-",3)
             return {
-                nameImage:image.image,
-                dataImage: datas
+                urlImage:image.hdurl,
+                titleImage: image.title
             }
         });
     
