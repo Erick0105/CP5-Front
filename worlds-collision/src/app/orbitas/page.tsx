@@ -1,7 +1,7 @@
-"use cliente"
+"use client"
 import { TipoImagens } from '@/types';
 import React, { useEffect, useState } from 'react'
-import { Image } from 'next/image';
+import Image from 'next/image';
 
 export default function Orbitas() {
 
