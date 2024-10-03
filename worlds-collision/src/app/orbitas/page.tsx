@@ -1,7 +1,7 @@
 "use client"
 import { TipoImagens } from '@/types';
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Orbitas() {
 
@@ -23,7 +23,7 @@ export default function Orbitas() {
     // Adicionar imagem via API
     <main className="conteudo">
         <h1>Órbitas Planetárias e Instabilidade</h1>
-        <Image src={imgAleatoria.hdurl} alt="Imagem"/>
+        {/* <Image src={imgAleatoria.hdurl} alt="Imagem"/> */}
         <h3>Velikovsky sugeriu que Vênus, Marte e outros corpos celestes poderiam ter passado perto da Terra, perturbando as órbitas planetárias de forma significativa. Isso implicava em uma instabilidade no sistema solar que não era compatível com os cálculos newtonianos de órbitas estáveis a longo prazo.</h3>
     </main>
   );
