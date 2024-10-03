@@ -15,8 +15,9 @@ export default function Orbitas() {
     }
 
     chamadaApi();
-  }, [])
 
+  }, [])
+  
   const imgAleatoria = imagens[Math.floor(Math.random() * imagens.length)];
   return (
     // Adicionar imagem via API
